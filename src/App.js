@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Toastify from "./components/Toastify"
+import PhoneNumberInput from "./components/PhoneNumberInput";
+import ImageGalery from "./components/ImageGalery";
+import Map from "./components/Map";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Toastify/>
+      <hr/>
+      <PhoneNumberInput/>
+      <hr/>
+      <ImageGalery/>
+      <hr/>
+      <Map/>
     </div>
   );
 }
